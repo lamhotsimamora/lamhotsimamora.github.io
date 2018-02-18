@@ -22,7 +22,7 @@ $my_ext = __({
   el:'my_ext',
   html:'<hr> <p> <center> <a href="https://www.lamhotsimamora.com/img_certificates/Certificate-Lamhot-Simamora-C%23-MTA.png" '
   +'target="_blank"><img width="300" height="200" src="https://www.lamhotsimamora.com/img_certificates/Certificate-Lamhot-Simamora-C%23-MTA.png" class="image">'
-  +'</a> <a href="https://goo.gl/zgShXD" target="_blank"><img width="400" height="200" src="https://goo.gl/zgShXD" class="image"></a> <br> </center> <hr> '
+  +'</a> <a href="https://goo.gl/zgShXD" target="_blank"><img width="300" height="100" src="https://goo.gl/zgShXD" class="image"></a> <br> </center> <hr> '
   +'<code> <br> <h2>I am creator of <a href="http://bit.ly/GarudaJavascript2" target="_blank">Garuda Javascript 2</a> and '
   +'<a href="https://garudaframeworkpro.lamhotsimamora.com/" target="_blank">Garuda Framework PHP Professional Edition</a></h2> </code> </p> <hr>'}
 );
