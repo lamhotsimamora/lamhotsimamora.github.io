@@ -9,8 +9,9 @@ $my_app = __({
 });
 
 $my_app.setContent(
-	'<br> <h1 id="_a1">Welcome to my page | <a href="https://www.lamhotsimamora.com/" target="_blank">Lamhot Simamora</a></h1> <hr>'
-	+' <p id="_a2"> I am a developer <i>website</i>, <i>desktop</i> and mobile <i>android</i> programming. </p> <hr> <p id="_a3"> '
+	'<br> <h1 id="_a1"><center>Welcome to my page | <a href="https://www.lamhotsimamora.com/" target="_blank">Lamhot Simamora</a></center></h1> <hr>'
+	+'<div id="_a2"><p><center><img width="180" height="250" src="foto/lamhot-simamora.png" class="img-thumbnail"></img><center>'
+  +'</br> I am a developer <i>website</i>, <i>desktop</i> and mobile <i>android</i> programming. </p> <hr></div> <p id="_a3"> '
 	+'Skill Programming<br> <br> <strong> - PHP <br> - Java <br> - Python / Django <br> - '
 	+'Javascript / Node JS <br> - HTML <br> - C#.Net  <br> - ASP.Net <br> <br> </strong> '
 	+'Tools <strong> <br> - Sublime Text 3 <br> - Git <br> - Visual Studio <br> - Net Bean <br> - '
@@ -33,8 +34,9 @@ $my_inf = __({
   	multi:[
   		{ name:'My Github',when_click:"_newTab('https://github.com/lamhotsimamora');",btn_class:'btn-success' },
   		{ name:'My LinkedIn',when_click:"_newTab('https://www.linkedin.com/in/lamhot-simamora-757a26118/');",btn_class:'btn-info' },
-  		{ name:'My Instagram',when_click:"_newTab('https://www.instagram.com/lamhot.mora/');",btn_class:'btn-warning' },
-  		{ name:'lamhotsimamora36@gmail.com',when_click:"",btn_class:'btn-default' }
+      { name:'My Instagram',when_click:"_newTab('https://www.instagram.com/lamhot.mora/');",btn_class:'btn-warning' },
+  		{ name:'<g style="color: black">My Youtube Channel</g>',when_click:"_newTab('https://www.youtube.com/channel/UCmsX7f_05_JfiWlVpSLWCCA');",btn_class:'btn-primary' },
+  		{ name:'Explorer My Portofolio',when_click:"_newTab('./portofolio.html');",btn_class:'btn-danger' }
   	]
   }
 });
@@ -46,7 +48,7 @@ function welcome_one(){
     element: '#_a1',
     popover: {
       title: 'Hi ! Welcome to my page [L]amhot [S]imamora !',
-      description: '<p>My name is Lamhot Simamora. </br>I am @ newbie developer ! <p><hr><button class="btn-info" onclick="welcome_two();">Next</button>',
+      description: '<hr><p>My name is Lamhot Simamora. </br>I am @ newbie developer ! <p><hr><button class="btn-info" onclick="welcome_two();">Next</button>',
       position: 'bottom', 
     }
   });
@@ -57,7 +59,7 @@ function welcome_two(){
     element: '#_a2',
     popover: {
       title: 'Hi ! Welcome to my page [L]amhot [S]imamora !',
-      description: '<p>I am @ freelance !</p> <hr><button class="btn-info" onclick="welcome_three();" >Next</button>',
+      description: '<hr><p>I am @ freelance !</p> <hr><button class="btn-info" onclick="welcome_three();" >Next</button>',
       position: 'bottom', 
     }
   });
@@ -67,7 +69,7 @@ function welcome_three(){
     element: '#_a3',
     popover: {
       title: 'Hi ! Welcome to my page [L]amhot [S]imamora !',
-      description: '<p>I have some skills on programming !</p> <hr><button class="btn-info" onclick="welcome_four();" >Next</button>',
+      description: '<hr><p>I have some skills on programming !</p> <hr><button class="btn-info" onclick="welcome_four();" >Next</button>',
       position: 'top', 
     }
   });
@@ -78,7 +80,7 @@ function welcome_four(){
     element: '#my_ext',
     popover: {
       title: 'Hi ! Welcome to my page [L]amhot [S]imamora !',
-      description: '<p>I have international certificates by Microsoft Technology & also i am @ creator of Garuda Javascript  !</p> <hr><button class="btn-info" onclick="welcome_five();" >Next</button>',
+      description: '<hr><p>I have international certificates by <strong>Microsoft Technology Associate (MTA)</strong> & also i am @ creator of <strong>Garuda Javascript </strong>  !</p> <hr><button class="btn-info" onclick="welcome_five();" >Next</button>',
       position: 'top', 
     }
   });
@@ -89,7 +91,7 @@ function welcome_five(){
     element: '#my_inf',
     popover: {
       title: 'Hi ! Welcome to my page [L]amhot [S]imamora !',
-      description: '<p>You can follow my social media !</p> <hr>',
+      description: '<hr><p>You can follow my social media !</p> <hr>',
       position: 'top',
       showButtons: true,     
       doneBtnText: 'Done',  
@@ -98,6 +100,10 @@ function welcome_five(){
   });
 }
 
+function openPortofolio()
+{
+  _newTab('./portofolio.html');
+}
 
 setTimeout($=>{
 	Garuda('@load').delete();
