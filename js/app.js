@@ -48,7 +48,7 @@ function welcome_one(){
     element: '#_a1',
     popover: {
       title: 'Hi ! Welcome to my page [L]amhot [S]imamora !',
-      description: '<hr><p>My name is Lamhot Simamora. </br>I am @ newbie developer ! <p><hr><button class="btn-info" onclick="welcome_two();">Next</button>',
+      description: '<hr><p>My name is Lamhot Simamora. </br>I am @ professional programmer ! <p><hr><button class="btn-info" onclick="welcome_two();">Next</button>',
       position: 'bottom', 
     }
   });
