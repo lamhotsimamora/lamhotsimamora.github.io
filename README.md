@@ -1,4 +1,4 @@
-# Hello World ! I am @ newbie !
+# Hello World ! I am @ maniac of programming !
 
 ## DEMO 
 <a href="https://lamhotsimamora.github.io/">https://lamhotsimamora.github.io/</a>
