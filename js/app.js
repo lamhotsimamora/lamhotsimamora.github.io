@@ -34,7 +34,7 @@ $my_inf = __({
   	multi:[
   		{ name:'My Github',when_click:"_newTab('https://github.com/lamhotsimamora');",btn_class:'btn-success' },
   		{ name:'My LinkedIn',when_click:"_newTab('https://www.linkedin.com/in/lamhot-simamora-757a26118/');",btn_class:'btn-info' },
-      { name:'My Instagram',when_click:"_newTab('https://www.instagram.com/lamhot.mora/');",btn_class:'btn-warning' },
+      { name:'My Instagram',when_click:"_newTab('https://www.instagram.com/lamhotsimamora93/');",btn_class:'btn-warning' },
   		{ name:'<g style="color: black">My Youtube Channel</g>',when_click:"_newTab('https://www.youtube.com/channel/UCmsX7f_05_JfiWlVpSLWCCA');",btn_class:'btn-primary' },
   		{ name:'Explorer My Portofolio',when_click:"_newTab('./portofolio.html');",btn_class:'btn-danger' }
   	]
