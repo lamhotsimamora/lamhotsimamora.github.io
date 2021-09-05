@@ -37,6 +37,10 @@
 	<link rel="alternate" hreflang="id" href="https://lamhotsimamora.github.io/" />
 	<link rel="alternate" hreflang="x-default" href="https://lamhotsimamora.github.io/" />
 	<meta name="theme-color" content="blue">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script src="js/jnet.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/sweet-alert.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -73,13 +77,13 @@
 						<h1>Lamhot Simamora</h1>
 						<h2>I'm a
 							<span class="txt-rotate" data-period="2000"
-								data-rotate='[ "Web Designer.", "Software Engineer", "Network Engineer", "Trader"]'></span>
+							data-rotate='["Web Development","Android Development","Network Engineer","Trader","Trainer"]'></span>
 						</h2>
 					</div>
 				</div>
 			</div>
 		</div>
-		</div>
+		
 		<div class="mouse">
 			<a href="#" class="mouse-icon">
 				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
@@ -228,7 +232,7 @@
 									<h2 class="h5 font-weight-bold text-center mb-4">PHP [Laravel & Codeigniter]</h2>
 
 									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='90'>
+									<div class="progress mx-auto" data-value="90">
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
 										</span>
@@ -262,7 +266,7 @@
 									<h2 class="h5 font-weight-bold text-center mb-4">Python [Numpy & Pandas]</h2>
 
 									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='80'>
+									<div class="progress mx-auto" data-value="80">
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
 										</span>
@@ -296,7 +300,7 @@
 									<h2 class="h5 font-weight-bold text-center mb-4">Javascript [VueJS & Garuda JS]</h2>
 
 									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='75'>
+									<div class="progress mx-auto" data-value="75">
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
 										</span>
@@ -467,8 +471,8 @@
 						</span>
 						<div class="desc">
 							<h3 class="mb-5">Web Developer</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
+							<p>Make beautiful website application using new technology like Laravel, Codeigniter, NodeJS Express, Vue JS and more.
+								</p>
 						</div>
 					</a>
 				</div>
@@ -586,7 +590,7 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="1200">0</strong>
+							<strong class="number" data-number="250">0</strong>
 							<span>Complete Projects</span>
 						</div>
 					</div>
@@ -684,24 +688,25 @@
 				</div>
 			</div>
 
-			<div class="row no-gutters block-9">
+			<div class="row no-gutters block-9" id="app">
 				<div class="col-md-6 order-md-last d-flex">
+				
+					
 					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+
+						<center><div v-if="loading" class="spinner-border text-primary" role="status">
+							<span class="visually-hidden"></span>
+						</div></center> <br>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name">
+							<input type="text" @keypress="enterSend" v-model="name" ref="name" class="form-control" placeholder="Your Name">
 						</div>
+					
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Subject">
-						</div>
-						<div class="form-group">
-							<textarea name="" id="" cols="30" rows="7" class="form-control"
+							<textarea v-model="message" @keypress="enterSend" ref="message" name="" id="" cols="30" rows="7" class="form-control"
 								placeholder="Message"></textarea>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+							<input type="button" @click="sendMessage" value="Send" class="btn btn-primary py-3 px-5">
 						</div>
 					</form>
 
@@ -814,7 +819,7 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
-
+	<script src="app.js"></script>
 </body>
 
 </html>
