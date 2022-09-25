@@ -14,9 +14,7 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="icon" 
-      type="image/png" 
-      href="https://lamhotsimamora.github.io/icon.png">
+	<link rel="icon" type="image/png" href="https://lamhotsimamora.github.io/icon.png">
 	<link rel="stylesheet" href="css/aos.css">
 
 	<link rel="stylesheet" href="css/ionicons.min.css">
@@ -77,13 +75,13 @@
 						<h1>Lamhot Simamora</h1>
 						<h2>I'm a
 							<span class="txt-rotate" data-period="2000"
-							data-rotate='["Web Deveoper","Android Developer","Network Engineer","Trader","Trainer"]'></span>
+								data-rotate='["Web Developer","Android Developer","Network Engineer","Trader","Trainer"]'></span>
 						</h2>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="mouse">
 			<a href="#" class="mouse-icon">
 				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
@@ -114,7 +112,7 @@
 								<li class="d-flex"><span>Address:</span> <span>Bangko City, Merangin, Jambi</span></li>
 								<li class="d-flex"><span>Zip code:</span> <span>37313</span></li>
 								<li class="d-flex"><span>Email:</span> <span>lamhotsimamora36@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+6282289953600</span></li>
+								<li class="d-flex"><span>Phone: </span> <span>+6281211126716</span></li>
 							</ul>
 						</div>
 					</div>
@@ -471,8 +469,9 @@
 						</span>
 						<div class="desc">
 							<h3 class="mb-5">Web Developer</h3>
-							<p>Make beautiful website application using new technology like Laravel, Codeigniter, NodeJS Express, Vue JS and more.
-								</p>
+							<p>Make beautiful website application using new technology like Laravel, Codeigniter, NodeJS
+								Express, Vue JS and more.
+							</p>
 						</div>
 					</a>
 				</div>
@@ -690,20 +689,23 @@
 
 			<div class="row no-gutters block-9" id="app">
 				<div class="col-md-6 order-md-last d-flex">
-				
-					
+
+
 					<form action="#" class="bg-light p-4 p-md-5 contact-form">
 
-						<center><div v-if="loading" class="spinner-border text-primary" role="status">
-							<span class="visually-hidden"></span>
-						</div></center> <br>
+						<center>
+							<div v-if="loading" class="spinner-border text-primary" role="status">
+								<span class="visually-hidden"></span>
+							</div>
+						</center> <br>
 						<div class="form-group">
-							<input type="text" @keypress="enterSend" v-model="name" ref="name" class="form-control" placeholder="Your Name">
+							<input type="text" @keypress="enterSend" v-model="name" ref="name" class="form-control"
+								placeholder="Your Name">
 						</div>
-					
+
 						<div class="form-group">
-							<textarea v-model="message" @keypress="enterSend" ref="message" name="" id="" cols="30" rows="7" class="form-control"
-								placeholder="Message"></textarea>
+							<textarea v-model="message" @keypress="enterSend" ref="message" name="" id="" cols="30"
+								rows="7" class="form-control" placeholder="Message"></textarea>
 						</div>
 						<div class="form-group">
 							<input type="button" @click="sendMessage" value="Send" class="btn btn-primary py-3 px-5">
